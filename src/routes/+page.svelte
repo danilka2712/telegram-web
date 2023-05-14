@@ -12,7 +12,7 @@
         if (browser) {
             const telegram: TelegramWebApp = window.Telegram.WebApp;
             tg = telegram;
-            const userTg = tg.initDataUnsafe?.user;
+            const userTg = tg.initDataUnsafe?.user?.username;
             user = userTg;
         }
     });

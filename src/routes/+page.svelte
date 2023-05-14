@@ -13,17 +13,32 @@
             const telegram: TelegramWebApp = window.Telegram.WebApp;
             tg = telegram;
             const userTg = tg.initDataUnsafe?.user;
+            console.log(userTg);
             user = userTg;
         }
     });
+
     let user: any;
     let tg: any;
+
     function close() {
         tg.close();
     }
 </script>
 
-<div>
+<div class="container">
     <h1>{user}</h1>
     <button on:click={close}>Закрыть</button>
 </div>
+
+<style>
+    .container {
+        text-align: center;
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 2em;
+        margin-bottom: 20px;
+    }
+</style>

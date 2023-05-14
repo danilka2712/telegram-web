@@ -14,7 +14,11 @@
             tg = telegram;
             const userTg = tg.initDataUnsafe?.user?.username;
             user = userTg;
-            telegram.MainButton;
+            if (telegram.MainButton.isVisible) {
+                telegram.MainButton.hide();
+            } else {
+                telegram.MainButton.show();
+            }
         }
     });
 

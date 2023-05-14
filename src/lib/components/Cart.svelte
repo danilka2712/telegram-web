@@ -1,14 +1,12 @@
 <div class="flex flex-col items-center">
     <div>
         <img src="/cigarette_PNG4759.png" alt="" />
+        <p>Bond синий</p>
     </div>
     <div>
-        <button class="btn">Купить</button>
+        <button class=" bg-sky-700 p-2 px-4">Купить</button>
     </div>
 </div>
 
 <style>
-    .btn {
-        background-color: var(--tg-theme-button-color);
-    }
 </style>

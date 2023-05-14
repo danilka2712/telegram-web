@@ -4,7 +4,7 @@
         <p class=" font-medium">Bond синий</p>
     </div>
     <div>
-        <button class=" bg-sky-700 p-2 px-4">Купить</button>
+        <button class=" bg-sky-700 p-2 px-4 rounded-lg">Купить</button>
     </div>
 </div>
 

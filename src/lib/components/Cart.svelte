@@ -1,7 +1,7 @@
-<div class="flex flex-col items-center p-2">
+<div class="flex flex-col items-center">
     <div class="flex flex-col items-center mb-2">
         <img src="/cigarette_PNG4759.png" alt="" />
-        <p class=" font-medium text-center text-sm">Bond синий compact</p>
+        <p class=" font-medium text-center">Bond синий compact</p>
     </div>
     <div class="w-full">
         <button

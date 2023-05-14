@@ -25,7 +25,7 @@
     }
 </script>
 
-<div class="grid grid-cols-3">
+<div class="grid grid-cols-3 gap-5">
     <Cart />
     <Cart />
     <Cart />

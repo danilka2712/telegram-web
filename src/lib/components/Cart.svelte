@@ -5,7 +5,7 @@
     </div>
     <div>
         <button
-            class=" bg-sky-700 p-2 px-4 font-semibold uppercase text-sm rounded-lg"
+            class=" bg-blue-600 p-2 px-4 font-semibold uppercase text-sm rounded-lg"
             >Купить</button
         >
     </div>

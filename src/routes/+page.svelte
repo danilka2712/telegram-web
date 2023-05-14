@@ -25,7 +25,7 @@
     }
 </script>
 
-<div class="grid cart grid-cols-3">
+<div class="grid grid-cols-3">
     <Cart />
     <Cart />
     <Cart />

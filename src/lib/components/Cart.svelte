@@ -5,11 +5,11 @@
 <div class="flex flex-col items-center">
     <div class="flex flex-col items-center mb-2">
         <img src="/cigarette_PNG4759.png" alt="" />
-        <p class=" font-medium text-center text-xs">Bond синий compact</p>
+        <p class=" font-bold text-center">Bond синий compact</p>
     </div>
     <div class="">
         <button
-            class="  bg-[#3478f7] text-white flex items-center justify-center gap-2 p-2 px-5 font-semibold uppercase rounded-lg"
+            class="  bg-[#3478f7] text-white flex items-center justify-center gap-2 p-2 px-5 font-semibold uppercase text-sm rounded-lg"
             ><Cart />920₽</button
         >
     </div>

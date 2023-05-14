@@ -14,6 +14,7 @@
             tg = telegram;
             const userTg = tg.initDataUnsafe?.user?.username;
             user = userTg;
+            telegram.MainButton;
         }
     });
 

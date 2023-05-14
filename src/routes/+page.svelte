@@ -1,7 +1,7 @@
 <script lang="ts">
     import { browser } from "$app/environment";
+    import Cart from "$lib/components/Cart.svelte";
     import { onMount } from "svelte";
-    import { toggle_class } from "svelte/internal";
 
     interface TelegramWebApp {
         close: boolean;
@@ -25,19 +25,18 @@
     }
 </script>
 
-<div class="container">
-    <h1>{user}</h1>
-    <button on:click={close}>Закрыть</button>
+<div class="grid cart grid-cols-3">
+    <Cart />
+    <Cart />
+    <Cart />
+    <Cart />
+    <Cart />
+    <Cart />
+    <Cart />
 </div>
 
 <style>
-    .container {
-        text-align: center;
-        padding: 20px;
-    }
-
-    h1 {
-        font-size: 2em;
-        margin-bottom: 20px;
+    .cart {
+        background: var(--tg-theme-secondary-bg-color);
     }
 </style>

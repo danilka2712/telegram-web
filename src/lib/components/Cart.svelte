@@ -5,11 +5,14 @@
     </div>
     <div>
         <button
-            class=" bg-sky-500 p-2 px-4 font-semibold uppercase text-sm rounded-lg"
+            class=" btn bg-sky-500 p-2 px-4 font-semibold uppercase text-sm rounded-lg"
             >Купить</button
         >
     </div>
 </div>
 
 <style>
+    .btn {
+        background-color: var(--tg-theme-button-color);
+    }
 </style>

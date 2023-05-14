@@ -4,7 +4,7 @@
     import { toggle_class } from "svelte/internal";
 
     interface TelegramWebApp {
-        close: string;
+        close: boolean;
         init(): void;
     }
 
@@ -12,7 +12,7 @@
         if (browser) {
             const telegram: TelegramWebApp = window.Telegram.WebApp;
             tg = telegram;
-            const userTg = tg.initDataUnsafe?.user?.username;
+            const userTg = tg.initDataUnsafe?.user;
             user = userTg;
         }
     });

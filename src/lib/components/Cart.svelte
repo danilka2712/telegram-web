@@ -1,9 +1,9 @@
-<div class="flex flex-col items-center">
+<div class="flex flex-col items-center p-2">
     <div class="flex flex-col items-center mb-2">
         <img src="/cigarette_PNG4759.png" alt="" />
-        <p class=" font-medium text-center">Bond синий compact</p>
+        <p class=" font-medium text-center text-sm">Bond синий compact</p>
     </div>
-    <div>
+    <div class="w-full">
         <button
             class="  bg-[#3478f7] text-white p-2 w-full font-semibold uppercase text-sm rounded-lg"
             >Купить</button

@@ -9,7 +9,7 @@
     </div>
     <div class="">
         <button
-            class="  bg-[#3478f7] text-white flex items-center justify-center gap-2 p-2 px-5 font-semibold uppercase text-sm rounded-lg"
+            class="  bg-[#3478f7] text-white flex items-center justify-center gap-2 p-2 px-5 font-semibold uppercase rounded-lg"
             ><Cart />920₽</button
         >
     </div>

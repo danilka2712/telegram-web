@@ -3,9 +3,9 @@
         <img src="/cigarette_PNG4759.png" alt="" />
         <p class=" font-medium text-center">Bond синий compact</p>
     </div>
-    <div class="w-full">
+    <div class="">
         <button
-            class="  bg-[#3478f7] text-white p-2 w-full font-semibold uppercase text-sm rounded-lg"
+            class="  bg-[#3478f7] text-white p-2 px-4 font-semibold uppercase text-sm rounded-lg"
             >Купить</button
         >
     </div>

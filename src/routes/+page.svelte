@@ -2,19 +2,19 @@
     import Cart from "$lib/svg/Cart.svelte";
     import { onMount } from "svelte";
     let firstName: string = "";
+    let quantity = 0;
+
     onMount(() => {
         let mainButton = "В корзине";
-        let quantify = quantity;
         firstName = window.Telegram.WebApp.initDataUnsafe.user.first_name || "";
 
         const tgApp = window.Telegram.WebApp;
         tgApp.MainButton.setParams({
-            text: `${mainButton} (${quantify})`,
+            text: `${mainButton} (${quantity})`,
             color: "#0ea5e9",
         });
         tgApp.MainButton.onClick(() => tgApp.close);
     });
-    let quantity = 0;
 
     function toggleMainButton() {
         const mainButton = window.Telegram.WebApp.MainButton;

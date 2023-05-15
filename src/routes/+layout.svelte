@@ -9,6 +9,6 @@
 <svelte:head>
   <script src="https://telegram.org/js/telegram-web-app.js"></script>
 </svelte:head>
-<main class="p-2">
+<main class="px-2">
   <slot />
 </main>

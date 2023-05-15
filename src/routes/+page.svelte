@@ -26,17 +26,26 @@
     Нажмите на карточку товара чтобы добавить в корзину
 </p>
 <div class="grid grid-cols-3 gap-4 mt-12">
-    <div class="flex flex-col">
-        <img src="/cigarette_PNG4759.png" alt="" />
-        <button class="bg-indigo-500 p-2 rounded-xl"><Cart /></button>
-    </div>
-    <div class="flex flex-col">
+    <div class="flex flex-col items-center">
         <img class=" " src="/cigarette_PNG4759.png" alt="" />
-        <button class="bg-indigo-500 p-2 rounded-xl"><Cart /></button>
+        <p class=" font-semibold">Bond Blue</p>
+        <button class="bg-indigo-500 p-2 rounded-xl flex items-center w-20"
+            ><Cart /></button
+        >
     </div>
-    <div class="flex flex-col">
-        <img src="/cigarette_PNG4759.png" alt="" />
-        <button class="bg-indigo-500 p-2 rounded-xl"><Cart /></button>
+    <div class="flex flex-col items-center">
+        <img class=" " src="/cigarette_PNG4759.png" alt="" />
+        <p class=" font-semibold">Bond Blue</p>
+        <button class="bg-indigo-500 p-2 rounded-xl flex items-center w-20"
+            ><Cart /></button
+        >
+    </div>
+    <div class="flex flex-col items-center">
+        <img class=" " src="/cigarette_PNG4759.png" alt="" />
+        <p class=" font-semibold">Bond Blue</p>
+        <button class="bg-indigo-500 p-2 rounded-xl flex items-center w-20"
+            ><Cart /></button
+        >
     </div>
 </div>
 

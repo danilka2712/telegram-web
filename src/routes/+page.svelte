@@ -3,17 +3,24 @@
     import { onMount } from "svelte";
     let firstName: string = "";
     onMount(() => {
+        let mainButton = "В корзине";
+        let quantify = quantity;
         firstName = window.Telegram.WebApp.initDataUnsafe.user.first_name || "";
 
         const tgApp = window.Telegram.WebApp;
-        tgApp.MainButton.setParams({ text: "Оформить", color: "#0ea5e9" });
+        tgApp.MainButton.setParams({
+            text: `${mainButton} (${quantify})`,
+            color: "#0ea5e9",
+        });
         tgApp.MainButton.onClick(() => tgApp.close);
     });
+    let quantity = 1;
 
     function toggleMainButton() {
         const mainButton = window.Telegram.WebApp.MainButton;
         if (mainButton.isVisible) mainButton.hide();
         else mainButton.show();
+        quantity += 1;
     }
 
     function expand() {
@@ -30,6 +37,7 @@
     ];
 </script>
 
+{quantity}
 <div class="mt-4 grid-cols-2 grid gap-4">
     {#each items as item}
         <div class=" rounded-xl">

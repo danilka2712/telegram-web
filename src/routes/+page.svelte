@@ -37,7 +37,7 @@
                 <img class="" src="/cigarette_PNG4759.png" alt="" />
                 <div class="p-3 flex items-center flex-col w-full">
                     <h1 class=" font-medium">Bond Black</h1>
-                    <div class="flex justify-between text-gray-600">
+                    <div class="flex justify-between hint_color">
                         <p>Цена:</p>
                         <p class=" font-medium">1200₽</p>
                     </div>

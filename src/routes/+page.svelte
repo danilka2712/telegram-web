@@ -30,7 +30,7 @@
     ];
 </script>
 
-<div class="mt-10 grid-cols-2 grid gap-4">
+<div class="mt-4 grid-cols-2 grid gap-4">
     {#each items as item}
         <div class=" rounded-xl">
             <div class="flex flex-col items-center">

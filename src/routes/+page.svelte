@@ -36,8 +36,9 @@
             <div class="flex flex-col items-center">
                 <img class="" src="/cigarette_PNG4759.png" alt="" />
                 <div class="p-3 flex items-center flex-col">
-                    <h1 class="text-lg font-medium">Bond Black</h1>
-                    <button class="mt-3 bg-blue-400 p-2 w-full rounded-lg"
+                    <h1 class=" font-medium">Bond Black</h1>
+                    <button
+                        class="mt-3 bg-blue-400 uppercase font-semibold p-2 w-full rounded-lg"
                         >Купить</button
                     >
                 </div>

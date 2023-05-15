@@ -24,20 +24,28 @@
 <p class="hint_color text-sm">
     Нажмите на карточку товара чтобы добавить в корзину
 </p>
-<div class="flex">
-    <button on:click={toggleMainButton}> Show/Hide Main Button </button>
-    <button on:click={expand}>Expand</button>
+<div class="grid grid-cols-3 gap-4 mt-12">
+    <div class="flex flex-col">
+        <img src="/cigarette_PNG4759.png" alt="" />
+        <button class="bg-indigo-500 p-2 rounded-xl">В корзину</button>
+    </div>
+    <div class="flex flex-col">
+        <img class=" " src="/cigarette_PNG4759.png" alt="" />
+        <button class="bg-indigo-500 p-2 rounded-xl">В корзину</button>
+    </div>
+    <div class="flex flex-col">
+        <img src="/cigarette_PNG4759.png" alt="" />
+        <button class="bg-indigo-500 p-2 rounded-xl">В корзину</button>
+    </div>
 </div>
 
 <style>
     .flex {
         display: flex;
         flex-direction: column;
-        gap: 1rem;
+        gap: 0.5rem;
     }
-    button {
-        padding: 1rem;
-    }
+
     .hint_color {
         color: var(--tg-theme-hint-color);
     }

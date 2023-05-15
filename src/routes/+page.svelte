@@ -19,7 +19,7 @@
     function toggleMainButton() {
         const mainButton = window.Telegram.WebApp.MainButton;
         if (quantity >= 1) {
-            mainButton.hide();
+            mainButton.show();
         }
 
         quantity += 1;

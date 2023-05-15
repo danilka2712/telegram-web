@@ -32,7 +32,7 @@
 
 <div class="mt-10 grid-cols-2 grid gap-4">
     {#each items as item}
-        <div class=" rounded-xl bg-white/5">
+        <div class=" rounded-xl">
             <div class="flex flex-col items-center">
                 <img class="" src="/cigarette_PNG4759.png" alt="" />
                 <div class=" flex items-center flex-col w-full">

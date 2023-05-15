@@ -49,7 +49,7 @@
                     <div class="flex flex-col relative items-center">
                         {#if product.quantity !== 0}
                             <h1
-                                class=" absolute top-0 right-3 bg-yellow-400 w-6 flex justify-center items-center rounded-full"
+                                class=" absolute top-0 right-3 bg-blue-500 w-6 flex justify-center items-center rounded-full"
                             >
                                 {product.quantity}
                             </h1>

@@ -46,7 +46,9 @@
         flex-direction: column;
         gap: 0.5rem;
     }
-
+    button {
+        background-color: var(--tg-theme-button-color);
+    }
     .hint_color {
         color: var(--tg-theme-hint-color);
     }

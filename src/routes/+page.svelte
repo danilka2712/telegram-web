@@ -21,9 +21,7 @@
 </script>
 
 <h1 class=" text-xl font-medium">Выберите товар</h1>
-<p class=" text-gray-400">
-    Нажмите на карточку товара чтобы добавить в корзину
-</p>
+<p class="hint_color">Нажмите на карточку товара чтобы добавить в корзину</p>
 <div class="flex">
     <button on:click={toggleMainButton}> Show/Hide Main Button </button>
     <button on:click={expand}>Expand</button>
@@ -37,5 +35,8 @@
     }
     button {
         padding: 1rem;
+    }
+    .hint_color {
+        color: var(--tg-theme-hint-color);
     }
 </style>

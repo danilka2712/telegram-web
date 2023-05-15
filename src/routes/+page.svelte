@@ -1,12 +1,11 @@
 <script lang="ts">
     import { onMount } from "svelte";
     let firstName: string = "";
-
     onMount(() => {
         firstName = window.Telegram.WebApp.initDataUnsafe.user.first_name || "";
 
         const tgApp = window.Telegram.WebApp;
-        tgApp.MainButton.setParams({ text: "Click me to Close" });
+        tgApp.MainButton.setParams({ text: "Оформить", color: "#ffffff" });
         tgApp.MainButton.onClick(() => tgApp.close);
     });
 

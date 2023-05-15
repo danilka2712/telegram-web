@@ -20,8 +20,10 @@
     }
 </script>
 
-<h1 class=" text-xl font-medium">Выберите товар</h1>
-<p class="hint_color">Нажмите на карточку товара чтобы добавить в корзину</p>
+<h1 class=" text-xl font-semibold">Выберите товар</h1>
+<p class="hint_color text-sm">
+    Нажмите на карточку товара чтобы добавить в корзину
+</p>
 <div class="flex">
     <button on:click={toggleMainButton}> Show/Hide Main Button </button>
     <button on:click={expand}>Expand</button>

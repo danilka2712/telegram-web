@@ -21,7 +21,9 @@
 </script>
 
 <h1>Выберите товар {firstName}!</h1>
-<p>Нажмите на карточку товара чтобы добавить в корзину</p>
+<p class=" text-gray-400">
+    Нажмите на карточку товара чтобы добавить в корзину
+</p>
 <div class="flex">
     <button on:click={toggleMainButton}> Show/Hide Main Button </button>
     <button on:click={expand}>Expand</button>

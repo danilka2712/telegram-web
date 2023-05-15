@@ -2,7 +2,7 @@
     import Cart from "$lib/svg/Cart.svelte";
     import { onMount } from "svelte";
     let firstName: string = "";
-    let quantity = 0;
+    let quantity = 1;
 
     onMount(() => {
         let mainButton = "В корзине";
@@ -18,7 +18,7 @@
         if (quantity >= 1) {
             const tgApp = window.Telegram.WebApp;
             tgApp.MainButton.setParams({
-                text: `${mainButton} (${quantity})`,
+                text: `В корзине (${quantity})`,
                 color: "#0ea5e9",
             });
             mainButton.show();

@@ -6,7 +6,7 @@
         firstName = window.Telegram.WebApp.initDataUnsafe.user.first_name || "";
 
         const tgApp = window.Telegram.WebApp;
-        tgApp.MainButton.setParams({ text: "Оформить", color: "#ffffff" });
+        tgApp.MainButton.setParams({ text: "Оформить", color: "#0ea5e9" });
         tgApp.MainButton.onClick(() => tgApp.close);
     });
 
@@ -41,7 +41,8 @@
                         <p class="">1200₽</p>
                     </div>
                     <button
-                        class="mt-3 bg-blue-400 uppercase font-semibold p-3 w-3/4 rounded-lg text-sm"
+                        on:click={toggleMainButton}
+                        class="mt-3 bg-sky-400 uppercase font-semibold p-3 w-3/4 rounded-lg text-sm"
                         >Купить</button
                     >
                 </div>

@@ -32,13 +32,13 @@
 
 <div class="mt-10 grid-cols-2 grid gap-4">
     {#each items as item}
-        <div class=" rounded-xl bg-slate-600">
+        <div class=" rounded-xl bg-white/5">
             <div class="flex flex-col items-center">
                 <img class="" src="/cigarette_PNG4759.png" alt="" />
-                <div class="p-3 flex items-center flex-col">
+                <div class="p-3 flex items-center flex-col w-full">
                     <h1 class=" font-medium">Bond Black</h1>
                     <button
-                        class="mt-3 bg-blue-400 uppercase font-semibold p-2 w-full rounded-lg text-sm"
+                        class="mt-3 bg-blue-400 uppercase font-semibold p-2 w-3/4 rounded-lg text-sm"
                         >Купить</button
                     >
                 </div>

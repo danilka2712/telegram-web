@@ -5,17 +5,16 @@
     let quantity = 1;
 
     onMount(() => {
-        let mainButton = "В корзине";
         firstName = window.Telegram.WebApp.initDataUnsafe.user.first_name || "";
-
         const tgApp = window.Telegram.WebApp;
-
         tgApp.MainButton.onClick(() => tgApp.close);
     });
 
     function toggleMainButton() {
         const mainButton = window.Telegram.WebApp.MainButton;
-        if (quantity >= 1) {
+        quantity += 1;
+
+        if (quantity > 0) {
             const tgApp = window.Telegram.WebApp;
             tgApp.MainButton.setParams({
                 text: `В корзине (${quantity})`,
@@ -23,8 +22,6 @@
             });
             mainButton.show();
         }
-
-        quantity += 1;
     }
 
     function expand() {

@@ -51,7 +51,7 @@
                     </div>
                     <button
                         on:click={toggleMainButton}
-                        class="mt-3 bg-blue-500 uppercase font-semibold p-3 w-3/4 rounded-lg text-sm"
+                        class="mt-3 bg-[#0ea5e9] uppercase font-semibold p-3 w-3/4 rounded-lg text-sm"
                         >Купить</button
                     >
                 </div>

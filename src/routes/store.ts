@@ -18,6 +18,30 @@ export const products = writable(
             availability: 12,
             hidden: false,
         },
+        {
+            id: 3,
+            name: "Bond blue",
+            price: "1300",
+            quantity: 0,
+            availability: 12,
+            hidden: false,
+        },
+        {
+            id: 4,
+            name: "Bond blue",
+            price: "1300",
+            quantity: 0,
+            availability: 12,
+            hidden: false,
+        },
+        {
+            id: 5,
+            name: "Bond blue",
+            price: "1300",
+            quantity: 0,
+            availability: 12,
+            hidden: false,
+        },
     ]
 )
 export const cart = writable([])

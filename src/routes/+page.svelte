@@ -1,6 +1,7 @@
 <script lang="ts">
     import Cart from "$lib/svg/Cart.svelte";
     import { onMount } from "svelte";
+    import { cart, products } from "./store";
     let firstName: string = "";
     let quantity = 1;
 
@@ -10,54 +11,68 @@
         tgApp.MainButton.onClick(() => tgApp.close);
     });
 
-    function toggleMainButton() {
+    function toggleMainButton(product) {
         const mainButton = window.Telegram.WebApp.MainButton;
-        quantity += 1;
+        const existingItem = $cart.find((item) => item.id === product.id);
+        if (existingItem) {
+            existingItem.quantity += 1;
+            $cart = $cart;
+        } else {
+            product.quantity = 1;
+            $cart = [...$cart, product];
+        }
 
-        if (quantity > 0) {
+        if ($cart.length > 0) {
             const tgApp = window.Telegram.WebApp;
             tgApp.MainButton.setParams({
-                text: `В корзине (${quantity})`,
+                text: `В корзине (${getTotalQuantity()})`,
                 color: "#0ea5e9",
             });
             mainButton.show();
         }
     }
 
+    function getTotalQuantity() {
+        return $cart.reduce((total, item) => total + item.quantity, 0);
+    }
+
     function expand() {
         window.Telegram.WebApp.expand();
     }
-
-    const items = [
-        { name: "1" },
-        { name: "1" },
-        { name: "1" },
-        { name: "1" },
-        { name: "1" },
-        { name: "1" },
-    ];
 </script>
 
-{quantity}
 <div class="mt-4 grid-cols-2 grid gap-4">
-    {#each items as item}
-        <div class=" rounded-xl">
-            <div class="flex flex-col items-center">
-                <img class="" src="/cigarette_PNG4759.png" alt="" />
-                <div class=" flex items-center flex-col w-full">
-                    <h1 class=" font-medium">Bond Black</h1>
-                    <div class="flex hint_color">
-                        <p class="">1200₽</p>
+    {#key $cart}
+        {#each $products as product}
+            {#if product.id}
+                <div class=" rounded-xl">
+                    <div class="flex flex-col relative items-center">
+                        {#if product.quantity !== 0}
+                            <h1
+                                class=" absolute top-0 right-3 bg-yellow-400 w-6 flex justify-center items-center rounded-full"
+                            >
+                                {product.quantity}
+                            </h1>
+                        {/if}
+                        <img class="" src="/cigarette_PNG4759.png" alt="" />
+                        <div class=" flex items-center flex-col w-full">
+                            <h1 class=" font-medium">
+                                Bond Black {product.quantity}
+                            </h1>
+                            <div class="flex hint_color">
+                                <p class="">1200₽</p>
+                            </div>
+                            <button
+                                on:click={() => toggleMainButton(product)}
+                                class="mt-3 bg-[#0ea5e9] uppercase font-semibold p-3 w-3/4 rounded-lg text-sm"
+                                >Купить</button
+                            >
+                        </div>
                     </div>
-                    <button
-                        on:click={toggleMainButton}
-                        class="mt-3 bg-[#0ea5e9] uppercase font-semibold p-3 w-3/4 rounded-lg text-sm"
-                        >Купить</button
-                    >
                 </div>
-            </div>
-        </div>
-    {/each}
+            {/if}
+        {/each}
+    {/key}
 </div>
 
 <style>

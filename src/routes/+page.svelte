@@ -38,7 +38,7 @@
                 <div class="p-3 flex items-center flex-col w-full">
                     <h1 class=" font-medium">Bond Black</h1>
                     <button
-                        class="mt-3 bg-blue-400 uppercase font-semibold p-4 w-3/4 rounded-lg text-sm"
+                        class="mt-3 bg-blue-400 uppercase font-semibold p-3 w-3/4 rounded-lg text-sm"
                         >Купить</button
                     >
                 </div>

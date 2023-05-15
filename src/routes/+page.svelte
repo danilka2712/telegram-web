@@ -21,43 +21,65 @@
     }
 </script>
 
-<h1 class=" text-xl font-semibold">Выберите товар</h1>
-<p class="hint_color text-sm">
-    Нажмите на карточку товара чтобы добавить в корзину
-</p>
-<div class="grid grid-cols-3 gap-4 mt-12">
-    <div class="flex flex-col items-center bg-slate-100">
-        <img class=" " src="/cigarette_PNG4759.png" alt="" />
-        <p class=" font-semibold">Bond Blue</p>
-        <button class="bg-indigo-500 p-2 rounded-xl flex items-center w-20"
-            ><Cart /></button
-        >
+<div class="mt-10 grid-cols-2 grid gap-4">
+    <div class=" rounded-xl p-3">
+        <div class="flex flex-col items-center">
+            <img class="" src="/cigarette_PNG4759.png" alt="" />
+            <div class="p-3 flex items-center flex-col">
+                <h1 class="text-lg font-medium">Bond Black</h1>
+                <button class="mt-3 bg-blue-400 p-2 w-full rounded-lg"
+                    >Купить</button
+                >
+            </div>
+        </div>
     </div>
-    <div class="flex flex-col items-center">
-        <img class=" " src="/cigarette_PNG4759.png" alt="" />
-        <p class=" font-semibold">Bond Blue</p>
-        <button class="bg-indigo-500 p-2 rounded-xl flex items-center w-20"
-            ><Cart /></button
-        >
+    <div class=" rounded-xl p-3">
+        <div class="flex flex-col items-center">
+            <img class="" src="/cigarette_PNG4759.png" alt="" />
+            <div class="p-3 flex items-center flex-col">
+                <h1 class="text-lg font-medium">Bond Black</h1>
+                <button class="mt-3 bg-blue-400 p-2 w-full rounded-lg"
+                    >Купить</button
+                >
+            </div>
+        </div>
     </div>
-    <div class="flex flex-col items-center">
-        <img class=" " src="/cigarette_PNG4759.png" alt="" />
-        <p class=" font-semibold">Bond Blue</p>
-        <button class="bg-indigo-500 p-2 rounded-xl flex items-center w-20"
-            ><Cart /></button
-        >
+    <div class=" rounded-xl p-3">
+        <div class="flex flex-col items-center">
+            <img class="" src="/cigarette_PNG4759.png" alt="" />
+            <div class="p-3 flex items-center flex-col">
+                <h1 class="text-lg font-medium">Bond Black</h1>
+                <button class="mt-3 bg-blue-400 p-2 w-full rounded-lg"
+                    >Купить</button
+                >
+            </div>
+        </div>
+    </div>
+    <div class=" rounded-xl p-3">
+        <div class="flex flex-col items-center">
+            <img class="" src="/cigarette_PNG4759.png" alt="" />
+            <div class="p-3 flex items-center flex-col">
+                <h1 class="text-lg font-medium">Bond Black</h1>
+                <button class="mt-3 bg-blue-400 p-2 w-full rounded-lg"
+                    >Купить</button
+                >
+            </div>
+        </div>
+    </div>
+    <div class=" rounded-xl p-3">
+        <div class="flex flex-col items-center">
+            <img class="" src="/cigarette_PNG4759.png" alt="" />
+            <div class="p-3 flex items-center flex-col">
+                <h1 class="text-lg font-medium">Bond Black</h1>
+                <button class="mt-3 bg-blue-400 p-2 w-full rounded-lg"
+                    >Купить</button
+                >
+            </div>
+        </div>
     </div>
 </div>
 
 <style>
-    .flex {
-        display: flex;
-        flex-direction: column;
-        gap: 0.5rem;
-    }
-    button {
-        background-color: var(--tg-theme-button-color);
-    }
     .hint_color {
         color: var(--tg-theme-hint-color);
     }

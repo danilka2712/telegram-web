@@ -1,47 +1,51 @@
 <script lang="ts">
-    import { browser } from "$app/environment";
-    import Cart from "$lib/components/Cart.svelte";
     import { onMount } from "svelte";
-
-    interface TelegramWebApp {
-        close: boolean;
-        init(): void;
-    }
+    let firstName: string = "";
 
     onMount(() => {
-        if (browser) {
-            const telegram: TelegramWebApp = window.Telegram.WebApp;
-            tg = telegram;
-            const userTg = tg.initDataUnsafe?.user?.username;
-            user = userTg;
-            if (telegram.MainButton.isVisible) {
-                telegram.MainButton.hide();
-            } else {
-                telegram.MainButton.show();
-            }
-        }
+        firstName = window.Telegram.WebApp.initDataUnsafe.user.first_name || "";
+
+        const tgApp = window.Telegram.WebApp;
+        tgApp.MainButton.setParams({ text: "Click me to Close" });
+        tgApp.MainButton.onClick(() => tgApp.close);
     });
 
-    let user: any;
-    let tg: any;
+    function toggleMainButton() {
+        const mainButton = window.Telegram.WebApp.MainButton;
+        if (mainButton.isVisible) mainButton.hide();
+        else mainButton.show();
+    }
 
-    function close() {
-        tg.close();
+    function expand() {
+        window.Telegram.WebApp.expand();
     }
 </script>
 
-<div class="grid grid-cols-3 gap-5">
-    <Cart />
-    <Cart />
-    <Cart />
-    <Cart />
-    <Cart />
-    <Cart />
-    <Cart />
+<h1>Hello {firstName}!</h1>
+<p>
+    Visit <a href="https://kit.svelte.dev">kit.svelte.dev</a> to read the documentation
+</p>
+
+<p>
+    If you are inteserted in Telegram web Bots please <a
+        href="https://core.telegram.org/bots/webapps"
+        target="_blank">click me</a
+    >
+</p>
+
+<h2>Lets look at what Telegram Web Bots can do</h2>
+<div class="flex">
+    <button on:click={toggleMainButton}> Show/Hide Main Button </button>
+    <button on:click={expand}>Expand</button>
 </div>
 
 <style>
-    .cart {
-        background: var(--tg-theme-secondary-bg-color);
+    .flex {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+    }
+    button {
+        padding: 1rem;
     }
 </style>

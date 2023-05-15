@@ -20,7 +20,7 @@
     }
 </script>
 
-<h1>Выберите товар {firstName}!</h1>
+<h1 class=" text-xl font-medium">Выберите товар</h1>
 <p class=" text-gray-400">
     Нажмите на карточку товара чтобы добавить в корзину
 </p>

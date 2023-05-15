@@ -35,7 +35,7 @@
         <div class=" rounded-xl bg-white/5">
             <div class="flex flex-col items-center">
                 <img class="" src="/cigarette_PNG4759.png" alt="" />
-                <div class="p-3 flex items-center flex-col w-full">
+                <div class=" flex items-center flex-col w-full">
                     <h1 class=" font-medium">Bond Black</h1>
                     <div class="flex justify-between hint_color">
                         <p>Цена:</p>

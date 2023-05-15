@@ -1,4 +1,5 @@
 <script lang="ts">
+    import Cart from "$lib/svg/Cart.svelte";
     import { onMount } from "svelte";
     let firstName: string = "";
     onMount(() => {
@@ -27,15 +28,15 @@
 <div class="grid grid-cols-3 gap-4 mt-12">
     <div class="flex flex-col">
         <img src="/cigarette_PNG4759.png" alt="" />
-        <button class="bg-indigo-500 p-2 rounded-xl">В корзину</button>
+        <button class="bg-indigo-500 p-2 rounded-xl"><Cart /></button>
     </div>
     <div class="flex flex-col">
         <img class=" " src="/cigarette_PNG4759.png" alt="" />
-        <button class="bg-indigo-500 p-2 rounded-xl">В корзину</button>
+        <button class="bg-indigo-500 p-2 rounded-xl"><Cart /></button>
     </div>
     <div class="flex flex-col">
         <img src="/cigarette_PNG4759.png" alt="" />
-        <button class="bg-indigo-500 p-2 rounded-xl">В корзину</button>
+        <button class="bg-indigo-500 p-2 rounded-xl"><Cart /></button>
     </div>
 </div>
 

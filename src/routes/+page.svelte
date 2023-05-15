@@ -19,64 +19,31 @@
     function expand() {
         window.Telegram.WebApp.expand();
     }
+
+    const items = [
+        { name: "1" },
+        { name: "1" },
+        { name: "1" },
+        { name: "1" },
+        { name: "1" },
+        { name: "1" },
+    ];
 </script>
 
 <div class="mt-10 grid-cols-2 grid gap-4">
-    <div class=" rounded-xl p-3">
-        <div class="flex flex-col items-center">
-            <img class="" src="/cigarette_PNG4759.png" alt="" />
-            <div class="p-3 flex items-center flex-col">
-                <h1 class="text-lg font-medium">Bond Black</h1>
-                <button class="mt-3 bg-blue-400 p-2 w-full rounded-lg"
-                    >Купить</button
-                >
+    {#each items as item}
+        <div class=" rounded-xl">
+            <div class="flex flex-col items-center">
+                <img class="" src="/cigarette_PNG4759.png" alt="" />
+                <div class="p-3 flex items-center flex-col">
+                    <h1 class="text-lg font-medium">Bond Black</h1>
+                    <button class="mt-3 bg-blue-400 p-2 w-full rounded-lg"
+                        >Купить</button
+                    >
+                </div>
             </div>
         </div>
-    </div>
-    <div class=" rounded-xl p-3">
-        <div class="flex flex-col items-center">
-            <img class="" src="/cigarette_PNG4759.png" alt="" />
-            <div class="p-3 flex items-center flex-col">
-                <h1 class="text-lg font-medium">Bond Black</h1>
-                <button class="mt-3 bg-blue-400 p-2 w-full rounded-lg"
-                    >Купить</button
-                >
-            </div>
-        </div>
-    </div>
-    <div class=" rounded-xl p-3">
-        <div class="flex flex-col items-center">
-            <img class="" src="/cigarette_PNG4759.png" alt="" />
-            <div class="p-3 flex items-center flex-col">
-                <h1 class="text-lg font-medium">Bond Black</h1>
-                <button class="mt-3 bg-blue-400 p-2 w-full rounded-lg"
-                    >Купить</button
-                >
-            </div>
-        </div>
-    </div>
-    <div class=" rounded-xl p-3">
-        <div class="flex flex-col items-center">
-            <img class="" src="/cigarette_PNG4759.png" alt="" />
-            <div class="p-3 flex items-center flex-col">
-                <h1 class="text-lg font-medium">Bond Black</h1>
-                <button class="mt-3 bg-blue-400 p-2 w-full rounded-lg"
-                    >Купить</button
-                >
-            </div>
-        </div>
-    </div>
-    <div class=" rounded-xl p-3">
-        <div class="flex flex-col items-center">
-            <img class="" src="/cigarette_PNG4759.png" alt="" />
-            <div class="p-3 flex items-center flex-col">
-                <h1 class="text-lg font-medium">Bond Black</h1>
-                <button class="mt-3 bg-blue-400 p-2 w-full rounded-lg"
-                    >Купить</button
-                >
-            </div>
-        </div>
-    </div>
+    {/each}
 </div>
 
 <style>

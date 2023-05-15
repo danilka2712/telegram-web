@@ -26,7 +26,7 @@
     Нажмите на карточку товара чтобы добавить в корзину
 </p>
 <div class="grid grid-cols-3 gap-4 mt-12">
-    <div class="flex flex-col items-center">
+    <div class="flex flex-col items-center bg-slate-100">
         <img class=" " src="/cigarette_PNG4759.png" alt="" />
         <p class=" font-semibold">Bond Blue</p>
         <button class="bg-indigo-500 p-2 rounded-xl flex items-center w-20"

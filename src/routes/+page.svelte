@@ -14,12 +14,14 @@
         });
         tgApp.MainButton.onClick(() => tgApp.close);
     });
-    let quantity = 1;
+    let quantity = 0;
 
     function toggleMainButton() {
         const mainButton = window.Telegram.WebApp.MainButton;
-        if (mainButton.isVisible) mainButton.hide();
-        else mainButton.show();
+        if (quantity >= 1) {
+            mainButton.hide();
+        }
+
         quantity += 1;
     }
 

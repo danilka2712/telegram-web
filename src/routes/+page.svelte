@@ -7,6 +7,8 @@
 
     onMount(() => {
         firstName = window.Telegram.WebApp.initDataUnsafe.user.first_name || "";
+        const tgApp = window.Telegram.WebApp;
+        tgApp.onEvent("mainButtonClicked", sendTelegramData);
     });
     const dataToSend = {
         name: "John",

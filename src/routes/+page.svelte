@@ -9,6 +9,9 @@
         firstName = window.Telegram.WebApp.initDataUnsafe.user.first_name || "";
         const tgApp = window.Telegram.WebApp;
         tgApp.onEvent("mainButtonClicked", sendTelegramData);
+        return () => {
+            tgApp.offEvent("mainButtonClicked", sendTelegramData);
+        };
     });
     const dataToSend = {
         name: "John",
@@ -73,7 +76,6 @@
                             </div>
                             <button
                                 on:click={() => toggleMainButton(product)}
-                                on:click={sendTelegramData}
                                 class="mt-3 bg-[#0ea5e9] uppercase font-semibold p-3 w-3/4 rounded-lg text-sm"
                                 >Купить</button
                             >

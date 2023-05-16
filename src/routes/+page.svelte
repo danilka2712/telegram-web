@@ -8,7 +8,7 @@
     onMount(() => {
         firstName = window.Telegram.WebApp.initDataUnsafe.user.first_name || "";
         const tgApp = window.Telegram.WebApp;
-        tgApp.MainButton.onClick(() => tgApp.close);
+        tgApp.MainButton.onClick(() => tgApp.sendData("asdsa"));
     });
 
     function toggleMainButton(product) {

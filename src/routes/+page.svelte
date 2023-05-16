@@ -12,7 +12,7 @@
     });
     const appMessage = () => {
         const tgApp = window.Telegram.WebApp;
-        tgApp.MainButton.sendData(JSON.stringify("sad"));
+        tgApp.sendData(JSON.stringify("sad"));
     };
     function toggleMainButton(product) {
         const mainButton = window.Telegram.WebApp.MainButton;

@@ -18,7 +18,7 @@
 
     function sendTelegramData() {
         const tgApp = window.Telegram.WebApp;
-        tgApp.MainButton.sendData(JSON.stringify(dataToSend));
+        tgApp.sendData(JSON.stringify(dataToSend));
     }
     function toggleMainButton(product) {
         const existingItem = $cart.find((item) => item.id === product.id);

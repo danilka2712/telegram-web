@@ -8,10 +8,15 @@
     onMount(() => {
         firstName = window.Telegram.WebApp.initDataUnsafe.user.first_name || "";
     });
+    const dataToSend = {
+        name: "John",
+        age: 30,
+        email: "john@example.com",
+    };
 
     function sendTelegramData() {
         const tgApp = window.Telegram.WebApp;
-        tgApp.sendData(JSON.stringify("data to send"));
+        tgApp.sendData(JSON.stringify(dataToSend));
     }
     function toggleMainButton(product) {
         const mainButton = window.Telegram.WebApp.MainButton;

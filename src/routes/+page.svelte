@@ -9,13 +9,10 @@
         firstName = window.Telegram.WebApp.initDataUnsafe.user.first_name || "";
         const tgApp = window.Telegram.WebApp;
         tgApp.MainButton.onEvent("mainButtonClicked", appMessage);
-        return () => {
-            tgApp.MainButton.offEvent("mainButtonClicked", appMessage);
-        };
     });
     const appMessage = () => {
         const tgApp = window.Telegram.WebApp;
-        tgApp.MainButton.sendData("mainButtonClicked");
+        tgApp.MainButton.sendData(JSON.stringify("sad"));
     };
     function toggleMainButton(product) {
         const mainButton = window.Telegram.WebApp.MainButton;

@@ -8,7 +8,7 @@
     onMount(() => {
         firstName = window.Telegram.WebApp.initDataUnsafe.user.first_name || "";
         const tgApp = window.Telegram.WebApp;
-        tgApp.MainButton.onEvent("mainButtonClicked", appMessage);
+        tgApp.onEvent("mainButtonClicked", appMessage);
     });
     const appMessage = () => {
         const tgApp = window.Telegram.WebApp;

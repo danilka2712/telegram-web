@@ -4,10 +4,8 @@
     import { cart, products } from "./store";
     let firstName: string = "";
     let quantity = 1;
-    const tgApp = window.Telegram.WebApp;
 
     onMount(() => {
-        firstName = window.Telegram.WebApp.initDataUnsafe.user.first_name || "";
         const tgApp = window.Telegram.WebApp;
         tgApp.onEvent("mainButtonClicked", sendTelegramData);
     });
@@ -18,6 +16,7 @@
     };
 
     function sendTelegramData() {
+        const tgApp = window.Telegram.WebApp;
         tgApp.sendData(JSON.stringify(dataToSend));
     }
     function toggleMainButton(product) {

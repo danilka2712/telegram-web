@@ -8,7 +8,7 @@
     onMount(() => {
         const tgApp = window.Telegram.WebApp;
         tgApp.MainButton.show();
-        tgApp.MainButton.sendData("mainButtonClicked", close());
+        tgApp.MainButton.onEvent("mainButtonClicked", sendTelegramData);
     });
     const dataToSend = {
         name: "John",
@@ -18,7 +18,7 @@
 
     function sendTelegramData() {
         const tgApp = window.Telegram.WebApp;
-        tgApp.sendData(JSON.stringify(dataToSend));
+        tgApp.MainButton.sendData(JSON.stringify(dataToSend));
     }
     function toggleMainButton(product) {
         const existingItem = $cart.find((item) => item.id === product.id);

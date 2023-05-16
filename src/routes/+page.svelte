@@ -14,15 +14,17 @@
         });
         tgApp.onEvent("mainButtonClicked", sendTelegramData);
     });
-    const dataToSend = {
-        name: "John",
-        age: 30,
-        email: "john@example.com",
-    };
+    const dataToSend = [
+        {
+            name: "John",
+            age: 30,
+            email: "john@example.com",
+        },
+    ];
 
     function sendTelegramData() {
         const tgApp = window.Telegram.WebApp;
-        tgApp.sendData(dataToSend);
+        tgApp.sendData(JSON.stringify(dataToSend));
     }
     function toggleMainButton(product) {
         const existingItem = $cart.find((item) => item.id === product.id);

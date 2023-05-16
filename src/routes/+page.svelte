@@ -8,9 +8,15 @@
     onMount(() => {
         firstName = window.Telegram.WebApp.initDataUnsafe.user.first_name || "";
         const tgApp = window.Telegram.WebApp;
-        tgApp.MainButton.onEvent(() => tgApp.sendData("asdsa"));
+        tgApp.MainButton.onEvent("mainButtonClicked", appMessage);
+        return () => {
+            tgApp.MainButton.offEvent("mainButtonClicked", appMessage);
+        };
     });
-
+    const appMessage = () => {
+        const tgApp = window.Telegram.WebApp;
+        tgApp.MainButton.sendData("mainButtonClicked");
+    };
     function toggleMainButton(product) {
         const mainButton = window.Telegram.WebApp.MainButton;
         const existingItem = $cart.find((item) => item.id === product.id);

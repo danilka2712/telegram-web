@@ -7,7 +7,8 @@
 
     onMount(() => {
         const tgApp = window.Telegram.WebApp;
-        tgApp.onEvent("mainButtonClicked", sendTelegramData);
+        tgApp.mainButton.show();
+        tgApp.onEvent("mainButtonClicked", close());
     });
     const dataToSend = {
         name: "John",
@@ -20,7 +21,6 @@
         tgApp.sendData(JSON.stringify(dataToSend));
     }
     function toggleMainButton(product) {
-        const mainButton = window.Telegram.WebApp.MainButton;
         const existingItem = $cart.find((item) => item.id === product.id);
         if (existingItem) {
             existingItem.quantity += 1;
@@ -36,7 +36,6 @@
                 text: `В корзине (${getTotalQuantity()})`,
                 color: "#0ea5e9",
             });
-            mainButton.show();
         }
     }
 

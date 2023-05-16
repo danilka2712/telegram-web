@@ -7,13 +7,12 @@
 
     onMount(() => {
         firstName = window.Telegram.WebApp.initDataUnsafe.user.first_name || "";
-        const tgApp = window.Telegram.WebApp;
-        tgApp.onEvent("mainButtonClicked", appMessage);
     });
-    const appMessage = () => {
+
+    function sendTelegramData() {
         const tgApp = window.Telegram.WebApp;
-        tgApp.sendData(JSON.stringify("sad"));
-    };
+        tgApp.sendData(JSON.stringify("data to send"));
+    }
     function toggleMainButton(product) {
         const mainButton = window.Telegram.WebApp.MainButton;
         const existingItem = $cart.find((item) => item.id === product.id);
@@ -67,6 +66,7 @@
                             </div>
                             <button
                                 on:click={() => toggleMainButton(product)}
+                                on:click={sendTelegramData}
                                 class="mt-3 bg-[#0ea5e9] uppercase font-semibold p-3 w-3/4 rounded-lg text-sm"
                                 >Купить</button
                             >

@@ -7,7 +7,7 @@
 
     onMount(() => {
         const tgApp = window.Telegram.WebApp;
-        tgApp.mainButton.show();
+        tgApp.MainButton.show();
         tgApp.onEvent("mainButtonClicked", close());
     });
     const dataToSend = {

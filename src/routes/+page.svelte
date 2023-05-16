@@ -2,6 +2,7 @@
     import Cart from "$lib/svg/Cart.svelte";
     import { onMount } from "svelte";
     import { cart, products } from "./store";
+    import { json } from "@sveltejs/kit";
     let firstName: string = "";
     let quantity = 1;
 
@@ -23,8 +24,12 @@
     ];
 
     function sendTelegramData() {
-        const tgApp = window.Telegram.WebApp;
-        tgApp.sendData(JSON.stringify(dataToSend));
+        fetch(
+            "https://api.telegram.org/6054894674:AAGe7n3CbqnpLTAAxg_wjJRNsW-klai_cyg/answerWebAppQuery",
+            {
+                body: JSON.stringify("sd"),
+            }
+        );
     }
     function toggleMainButton(product) {
         const existingItem = $cart.find((item) => item.id === product.id);

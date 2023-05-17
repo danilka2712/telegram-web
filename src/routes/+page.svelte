@@ -77,7 +77,7 @@
     }
 </script>
 
-{$cart.length}
+{JSON.stringify($cart)}
 <div class="mt-4 grid-cols-2 grid gap-4">
     {#key $cart}
         {#each $products as product}

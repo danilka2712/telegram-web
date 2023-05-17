@@ -69,17 +69,32 @@
                         {/if}
                         <img class="" src="/cigarette_PNG4759.png" alt="" />
                         <div class=" flex items-center flex-col w-full">
-                            <h1 class=" font-medium">
-                                Bond Black {product.quantity}
-                            </h1>
+                            <h1 class=" font-medium">Bond Black</h1>
                             <div class="flex hint_color">
                                 <p class="">1200₽</p>
                             </div>
-                            <button
-                                on:click={() => toggleMainButton(product)}
-                                class="mt-3 bg-[#0ea5e9] uppercase font-semibold p-3 w-3/4 rounded-lg text-sm"
-                                >Купить</button
-                            >
+                            {#if product.quantity === 0}
+                                <button
+                                    on:click={() => toggleMainButton(product)}
+                                    class="mt-3 bg-[#0ea5e9] uppercase font-semibold p-3 w-3/4 rounded-lg text-sm"
+                                    >Купить</button
+                                >
+                            {:else}
+                                <div class="flex w-full">
+                                    <button
+                                        on:click={() =>
+                                            toggleMainButton(product)}
+                                        class="mt-3 bg-[#0ea5e9] uppercase font-semibold p-3 w-1/2 rounded-lg text-sm"
+                                        >-</button
+                                    >
+                                    <button
+                                        on:click={() =>
+                                            toggleMainButton(product)}
+                                        class="mt-3 bg-[#0ea5e9] uppercase font-semibold p-3 w-1/2 rounded-lg text-sm"
+                                        >-</button
+                                    >
+                                </div>
+                            {/if}
                         </div>
                     </div>
                 </div>

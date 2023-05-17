@@ -7,11 +7,7 @@
 
     onMount(() => {
         const tgApp = window.Telegram.WebApp;
-        tgApp.MainButton.show();
-        tgApp.MainButton.setParams({
-            text: `В корзине (${getTotalQuantity()})`,
-            color: "#0ea5e9",
-        });
+
         tgApp.onEvent("mainButtonClicked", sendTelegramData);
     });
     const dataToSend = [
@@ -41,6 +37,11 @@
 
         if ($cart.length > 0) {
             const tgApp = window.Telegram.WebApp;
+            tgApp.MainButton.show();
+            tgApp.MainButton.setParams({
+                text: `В корзине (${getTotalQuantity()})`,
+                color: "#0ea5e9",
+            });
         }
     }
 

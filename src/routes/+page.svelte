@@ -77,6 +77,7 @@
     }
 </script>
 
+{$cart.length}
 <div class="mt-4 grid-cols-2 grid gap-4">
     {#key $cart}
         {#each $products as product}

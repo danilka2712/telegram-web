@@ -51,7 +51,9 @@
         const existingItem = $cart.find((item) => item.id === product.id);
         if (existingItem) {
             existingItem.quantity -= 1;
-            $cart = $cart;
+            if (existingItem.quantity === 0) {
+                $cart = $cart.filter((item) => item.id !== product.id);
+            }
         } else {
             product.quantity = 1;
             $cart = [...$cart, product];
@@ -62,23 +64,18 @@
                 text: `В корзине (${getTotalQuantity()})`,
                 color: "#0ea5e9",
             });
-        } else if (getTotalQuantity() <= 1) {
+        } else {
             const tgApp = window.Telegram.WebApp;
-
             tgApp.MainButton.hide();
         }
+        $cart = $cart;
     }
     function getTotalQuantity() {
         return $cart.reduce((total, item) => total + item.quantity, 0);
     }
-
-    function expand() {
-        window.Telegram.WebApp.expand();
-    }
 </script>
 
-{JSON.stringify($cart)}
-<div class="mt-4 grid-cols-2 grid gap-4">
+<div class="mt-4 grid-cols-3 grid gap-4">
     {#key $cart}
         {#each $products as product}
             {#if product.id}

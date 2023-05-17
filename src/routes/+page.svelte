@@ -71,6 +71,10 @@
     function expand() {
         window.Telegram.WebApp.expand();
     }
+
+    $: if ($cart.length === 0) {
+        window.Telegram.WebApp.MainButton.hide();
+    }
 </script>
 
 <div class="mt-4 grid-cols-2 grid gap-4">

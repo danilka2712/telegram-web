@@ -47,6 +47,16 @@
         }
     }
 
+    function minusMainButton(product) {
+        const existingItem = $cart.find((item) => item.id === product.id);
+        if (existingItem) {
+            existingItem.quantity -= 1;
+            $cart = $cart;
+        } else {
+            product.quantity = 1;
+            $cart = [...$cart, product];
+        }
+    }
     function getTotalQuantity() {
         return $cart.reduce((total, item) => total + item.quantity, 0);
     }
@@ -87,7 +97,7 @@
                                 <div class="flex w-full gap-4 justify-center">
                                     <button
                                         on:click={() =>
-                                            toggleMainButton(product)}
+                                            minusMainButton(product)}
                                         class="mt-3 bg-red-500 flex items-center justify-center uppercase font-semibold p-3 w-2/6 rounded-lg text-sm"
                                         ><Minus /></button
                                     >

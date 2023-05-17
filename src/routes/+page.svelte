@@ -56,9 +56,8 @@
             product.quantity = 1;
             $cart = [...$cart, product];
         }
-        if ($cart.length < 1) {
+        if ($cart.length > 0) {
             const tgApp = window.Telegram.WebApp;
-            tgApp.MainButton.hide();
             tgApp.MainButton.setParams({
                 text: `В корзине (${getTotalQuantity()})`,
                 color: "#0ea5e9",

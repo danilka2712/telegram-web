@@ -70,7 +70,9 @@
                             </h1>
                         {/if}
                         <img class="" src="/cigarette_PNG4759.png" alt="" />
-                        <div class=" flex items-center flex-col w-full">
+                        <div
+                            class=" flex items-center justify-center flex-col w-full"
+                        >
                             <h1 class=" font-medium">Bond Black</h1>
                             <div class="flex hint_color">
                                 <p class="">1200₽</p>
@@ -82,17 +84,19 @@
                                     >Купить</button
                                 >
                             {:else}
-                                <div class="flex w-full gap-4">
+                                <div
+                                    class="flex w-full gap-4 items-center justify-center"
+                                >
                                     <button
                                         on:click={() =>
                                             toggleMainButton(product)}
-                                        class="mt-3 bg-red-500 uppercase font-semibold p-3 w-2/6 rounded-lg text-sm"
+                                        class="mt-3 bg-red-500 flex items-center justify-center uppercase font-semibold p-3 w-2/6 rounded-lg text-sm"
                                         ><Minus /></button
                                     >
                                     <button
                                         on:click={() =>
                                             toggleMainButton(product)}
-                                        class="mt-3 bg-[#0ea5e9] uppercase font-semibold p-3 w-2/6 rounded-lg text-sm"
+                                        class="mt-3 bg-[#0ea5e9] uppercase flex items-center justify-center font-semibold p-3 w-2/6 rounded-lg text-sm"
                                         ><Plus /></button
                                     >
                                 </div>

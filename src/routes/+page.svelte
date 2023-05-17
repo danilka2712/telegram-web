@@ -56,6 +56,10 @@
             product.quantity = 1;
             $cart = [...$cart, product];
         }
+        if ($cart.length < 1) {
+            const tgApp = window.Telegram.WebApp;
+            tgApp.MainButton.hide();
+        }
     }
     function getTotalQuantity() {
         return $cart.reduce((total, item) => total + item.quantity, 0);

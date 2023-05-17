@@ -62,7 +62,7 @@
                 text: `В корзине (${getTotalQuantity()})`,
                 color: "#0ea5e9",
             });
-        } else if (getTotalQuantity() === 0) {
+        } else if (getTotalQuantity() < 2) {
             const tgApp = window.Telegram.WebApp;
 
             tgApp.MainButton.hide();

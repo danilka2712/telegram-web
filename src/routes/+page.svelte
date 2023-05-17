@@ -84,9 +84,7 @@
                                     >Купить</button
                                 >
                             {:else}
-                                <div
-                                    class="flex w-full gap-4 items-center justify-center"
-                                >
+                                <div class="flex w-full gap-4 justify-center">
                                     <button
                                         on:click={() =>
                                             toggleMainButton(product)}

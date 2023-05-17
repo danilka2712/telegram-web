@@ -2,6 +2,8 @@
     import Cart from "$lib/svg/Cart.svelte";
     import { onMount } from "svelte";
     import { cart, products } from "./store";
+    import Plus from "$lib/svg/Plus.svelte";
+    import Minus from "$lib/svg/Minus.svelte";
     let firstName: string = "";
     let quantity = 1;
 
@@ -80,18 +82,18 @@
                                     >Купить</button
                                 >
                             {:else}
-                                <div class="flex w-full">
+                                <div class="flex w-full gap-4">
                                     <button
                                         on:click={() =>
                                             toggleMainButton(product)}
-                                        class="mt-3 bg-[#0ea5e9] uppercase font-semibold p-3 w-2/6 rounded-lg text-sm"
-                                        >-</button
+                                        class="mt-3 bg-red-500 uppercase font-semibold p-3 w-2/6 rounded-lg text-sm"
+                                        ><Minus /></button
                                     >
                                     <button
                                         on:click={() =>
                                             toggleMainButton(product)}
                                         class="mt-3 bg-[#0ea5e9] uppercase font-semibold p-3 w-2/6 rounded-lg text-sm"
-                                        >-</button
+                                        ><Plus /></button
                                     >
                                 </div>
                             {/if}

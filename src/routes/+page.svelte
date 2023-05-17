@@ -73,7 +73,7 @@
                             <div class="flex hint_color">
                                 <p class="">1200₽</p>
                             </div>
-                            {#if product.quantity === 0}
+                            {#if product.quantity > 0}
                                 <button
                                     on:click={() => toggleMainButton(product)}
                                     class="mt-3 bg-[#0ea5e9] uppercase font-semibold p-3 w-3/4 rounded-lg text-sm"
@@ -84,13 +84,13 @@
                                     <button
                                         on:click={() =>
                                             toggleMainButton(product)}
-                                        class="mt-3 bg-[#0ea5e9] uppercase font-semibold p-3 w-1/2 rounded-lg text-sm"
+                                        class="mt-3 bg-[#0ea5e9] uppercase font-semibold p-3 w-2/6 rounded-lg text-sm"
                                         >-</button
                                     >
                                     <button
                                         on:click={() =>
                                             toggleMainButton(product)}
-                                        class="mt-3 bg-[#0ea5e9] uppercase font-semibold p-3 w-1/2 rounded-lg text-sm"
+                                        class="mt-3 bg-[#0ea5e9] uppercase font-semibold p-3 w-2/6 rounded-lg text-sm"
                                         >-</button
                                     >
                                 </div>

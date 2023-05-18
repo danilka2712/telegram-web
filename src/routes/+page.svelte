@@ -12,18 +12,10 @@
 
         tgApp.onEvent("mainButtonClicked", sendTelegramData);
     });
-    const dataToSend = [
-        {
-            name: "John",
-            age: 30,
-            email: "john@example.com",
-            shop: [{ name: "Dan" }, { name: "Bod" }],
-        },
-    ];
 
     function sendTelegramData() {
         const tgApp = window.Telegram.WebApp;
-        tgApp.sendData(JSON.stringify(dataToSend));
+        tgApp.sendData(JSON.stringify($cart));
         setTimeout(() => {
             tgApp.expand();
         }, 2000);

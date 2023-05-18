@@ -18,6 +18,11 @@
             age: 30,
             email: "john@example.com",
         },
+        {
+            name: "Dane",
+            age: 30,
+            email: "john@example.com",
+        },
     ];
 
     function sendTelegramData() {

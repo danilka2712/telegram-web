@@ -9,6 +9,7 @@
     onMount(() => {
         const tgApp = window.Telegram.WebApp;
         tgApp.onEvent("mainButtonClicked", sendTelegramData);
+        tgApp.onEvent("backButtonClicked", goto("/"));
     });
 
     function sendTelegramData() {

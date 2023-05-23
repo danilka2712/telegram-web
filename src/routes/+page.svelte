@@ -9,12 +9,14 @@
     onMount(() => {
         const tgApp = window.Telegram.WebApp;
         tgApp.onEvent("mainButtonClicked", sendTelegramData);
+        tgApp.onEvent("backButtonClicked", endSite);
     });
-
+    function endSite() {
+        goto("/");
+    }
     function sendTelegramData() {
         const tgApp = window.Telegram.WebApp;
         tgApp.BackButton.show();
-        tgApp.onClick(goto("/"));
         tgApp.MainButton.setParams({
             text: `Купить`,
             color: "#0ea5e9",

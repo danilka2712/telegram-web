@@ -4,6 +4,8 @@
     import { cart, products } from "./store";
     import Plus from "$lib/svg/Plus.svelte";
     import Minus from "$lib/svg/Minus.svelte";
+    import { page } from "$app/stores";
+    import { redirect } from "@sveltejs/kit";
     let firstName: string = "";
     let quantity = 1;
 
@@ -15,8 +17,8 @@
 
     function sendTelegramData() {
         const tgApp = window.Telegram.WebApp;
-
         tgApp.MainButton.hide();
+        redirect(302, "/contact");
     }
     function toggleMainButton(product) {
         const existingItem = $cart.find((item) => item.id === product.id);

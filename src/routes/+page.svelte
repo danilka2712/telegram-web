@@ -69,7 +69,6 @@
     }
 </script>
 
-<button on:click={siteRedirect}> Cdasd </button>
 <div class="mt-4 grid-cols-3 grid gap-4">
     {#key $cart}
         {#each $products as product}

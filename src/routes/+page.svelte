@@ -98,7 +98,7 @@
                         <div
                             class=" flex items-center justify-center flex-col w-full"
                         >
-                            <h1 class=" font-medium">Bond Black</h1>
+                            <h1 class=" font-medium text-sm">Bond Black</h1>
                             <div class="flex hint_color">
                                 <p class="">1200₽</p>
                             </div>

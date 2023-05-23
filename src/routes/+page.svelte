@@ -12,7 +12,9 @@
         tgApp.onEvent("backButtonClicked", endSite);
     });
     function endSite() {
+        const tgApp = window.Telegram.WebApp;
         goto("/");
+        tgApp.BackButton.hide();
     }
     function sendTelegramData() {
         const tgApp = window.Telegram.WebApp;

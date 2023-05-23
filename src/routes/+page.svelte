@@ -19,6 +19,13 @@
     function sendTelegramData() {
         const tgApp = window.Telegram.WebApp;
         tgApp.MainButton.hide();
+        tgApp.MainButton.show();
+
+        tgApp.MainButton.setParams({
+            text: `В корзине (${getTotalQuantity()})`,
+            color: "#0ea5e9",
+        });
+        goto("/contact");
     }
 
     function toggleMainButton(product) {

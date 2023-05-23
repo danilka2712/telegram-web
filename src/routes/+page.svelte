@@ -6,6 +6,7 @@
     import Minus from "$lib/svg/Minus.svelte";
     import { page } from "$app/stores";
     import { redirect } from "@sveltejs/kit";
+    import { goto } from "$app/navigation";
     let firstName: string = "";
     let quantity = 1;
 
@@ -18,8 +19,14 @@
     function sendTelegramData() {
         const tgApp = window.Telegram.WebApp;
         tgApp.MainButton.hide();
-        redirect(302, "/contact");
+        tgApp.MainButton.show();
+        tgApp.MainButton.setParams({
+            text: `Купить`,
+            color: "#0ea5e9",
+        });
+        goto("/contact");
     }
+
     function toggleMainButton(product) {
         const existingItem = $cart.find((item) => item.id === product.id);
         if (existingItem) {
@@ -32,11 +39,6 @@
 
         if ($cart.length > 0) {
             const tgApp = window.Telegram.WebApp;
-            tgApp.MainButton.show();
-            tgApp.MainButton.setParams({
-                text: `В корзине (${getTotalQuantity()})`,
-                color: "#0ea5e9",
-            });
         }
     }
 
@@ -68,6 +70,7 @@
     }
 </script>
 
+<button on:click={siteRedirect}> Cdasd </button>
 <div class="mt-4 grid-cols-3 grid gap-4">
     {#key $cart}
         {#each $products as product}

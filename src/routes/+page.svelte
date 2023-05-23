@@ -15,11 +15,7 @@
 
     function sendTelegramData() {
         const tgApp = window.Telegram.WebApp;
-        tgApp.tgApp.MainButton.show();
-        tgApp.MainButton.setParams({
-            text: `Купить (${getTotalQuantity()})`,
-            color: "#0ea5e9",
-        });
+        tgApp.tgApp.MainButton.hide();
     }
     function toggleMainButton(product) {
         const existingItem = $cart.find((item) => item.id === product.id);

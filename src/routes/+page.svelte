@@ -4,11 +4,7 @@
     import { cart, products } from "./store";
     import Plus from "$lib/svg/Plus.svelte";
     import Minus from "$lib/svg/Minus.svelte";
-    import { page } from "$app/stores";
-    import { redirect } from "@sveltejs/kit";
     import { goto } from "$app/navigation";
-    let firstName: string = "";
-    let quantity = 1;
 
     onMount(() => {
         const tgApp = window.Telegram.WebApp;
@@ -17,7 +13,7 @@
 
     function sendTelegramData() {
         const tgApp = window.Telegram.WebApp;
-
+        tgApp.BackButton.show();
         tgApp.MainButton.setParams({
             text: `Купить`,
             color: "#0ea5e9",

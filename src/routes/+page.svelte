@@ -15,10 +15,11 @@
 
     function sendTelegramData() {
         const tgApp = window.Telegram.WebApp;
-        tgApp.sendData(JSON.stringify($cart));
-        setTimeout(() => {
-            tgApp.expand();
-        }, 2000);
+        tgApp.tgApp.MainButton.show();
+        tgApp.MainButton.setParams({
+            text: `Купить (${getTotalQuantity()})`,
+            color: "#0ea5e9",
+        });
     }
     function toggleMainButton(product) {
         const existingItem = $cart.find((item) => item.id === product.id);
@@ -96,7 +97,7 @@
                                     >Купить</button
                                 >
                             {:else}
-                                <div class="flex w-full gap-4 justify-center">
+                                <div class="flex w-full gap-2 justify-center">
                                     <button
                                         on:click={() =>
                                             minusMainButton(product)}

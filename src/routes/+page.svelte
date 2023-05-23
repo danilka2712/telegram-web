@@ -50,6 +50,9 @@
         const existingItem = $cart.find((item) => item.id === product.id);
         if (existingItem) {
             existingItem.quantity -= 1;
+            const tgApp = window.Telegram.WebApp;
+
+            tgApp.impactOccurred("light");
             if (existingItem.quantity === 0) {
                 $cart = $cart.filter((item) => item.id !== product.id);
             }

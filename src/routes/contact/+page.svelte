@@ -37,7 +37,7 @@
                         <p class="item-quantity">количество: {item.quantity}</p>
                     </div>
                 </div>
-                <div class="item-price pr-6">900₽</div>
+                <div class="item-price pr-6">{item.price}</div>
             </div>
         {/each}
         <div class="mt-6 flex justify-end pr-6">

@@ -33,7 +33,7 @@
                         <p class="item-quantity">количество: {item.quantity}</p>
                     </div>
                 </div>
-                <div class="item-price">900₽</div>
+                <div class="item-price pr-6">900₽</div>
             </div>
         {/each}
     </div>

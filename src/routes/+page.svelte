@@ -134,7 +134,6 @@
         {/each}
     {/key}
 </div>
-<a href="/contact">asd</a>
 
 <style>
     .hint_color {

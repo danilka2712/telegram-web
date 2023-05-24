@@ -14,7 +14,7 @@
 
 <div class="body h-screen w-full">
     <div class="box px-2 pr-6 pb-2">
-        <h1 class=" uppercase mb-2">Корзина</h1>
+        <h1 class=" uppercase mb-4 pl-6 text-lg font-semibold">Корзина</h1>
         {#each $cart as cart}
             <div class="flex items-center justify-between mb-2">
                 <div class="flex items-center">

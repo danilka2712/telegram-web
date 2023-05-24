@@ -1,48 +1,89 @@
+<!-- src/routes/contact/+page.svelte -->
+
 <script>
     import { onMount } from "svelte";
     import { cart } from "../store";
+
+    function sendTelegramData() {
+        const tgApp = window.Telegram.WebApp;
+        tgApp.sendData($cart);
+    }
 
     onMount(() => {
         const tgApp = window.Telegram.WebApp;
         tgApp.onEvent("mainButtonClicked", sendTelegramData);
     });
-    function sendTelegramData() {
-        const tgApp = window.Telegram.WebApp;
-        tgApp.sendData($cart);
-    }
 </script>
 
-<div class="body h-screen w-full">
-    <div class="box px-2 mt-6 pr-6 pb-2">
-        <h1 class=" uppercase mb-4 pl-4 text-lg font-semibold">Корзина</h1>
-        {#each $cart as cart}
-            <div class="flex items-center justify-between mb-2">
-                <div class="flex items-center">
-                    <img class="w-20 h-20" src="cigarette_PNG4759.png" alt="" />
-                    <div>
-                        <p class=" font-semibold">{cart.name}</p>
-                        <p class=" text-sm hint_color">
-                            количество: {cart.quantity}
-                        </p>
-                    </div>
+<div class="container">
+    <h1 class="title">Корзина</h1>
+    <div class="cart-items">
+        {#each $cart as item}
+            <div class="cart-item">
+                <img class="item-image" src="cigarette_PNG4759.png" alt="" />
+                <div class="item-details">
+                    <p class="item-name">{item.name}</p>
+                    <p class="item-quantity">количество: {item.quantity}</p>
                 </div>
-                <div class=" font-medium text-sm">900₽</div>
+                <div class="item-price">900₽</div>
             </div>
         {/each}
     </div>
 </div>
 
 <style>
-    .body {
+    /* src/routes/contact/+page.styles.css */
+
+    .container {
         background: var(--tg-theme-secondary-bg-color);
         color: var(--tg-theme-text-color);
+        height: 100vh;
+        width: 100%;
     }
-    .box {
-        background: var(--tg-theme-bg-color);
 
-        color: var(--tg-theme-text-color);
+    .title {
+        font-size: 1.5rem;
+        font-weight: 600;
+        margin-bottom: 1rem;
+        padding-left: 1rem;
+        text-transform: uppercase;
     }
-    .hint_color {
+
+    .cart-items {
+        background: var(--tg-theme-bg-color);
+        color: var(--tg-theme-text-color);
+        padding: 1rem;
+    }
+
+    .cart-item {
+        align-items: center;
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 0.5rem;
+    }
+
+    .item-image {
+        height: 5rem;
+        margin-right: 1rem;
+        width: 5rem;
+    }
+
+    .item-details {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .item-name {
+        font-weight: 600;
+    }
+
+    .item-quantity {
         color: var(--tg-theme-hint-color);
+        font-size: 0.875rem;
+    }
+
+    .item-price {
+        font-size: 0.875rem;
+        font-weight: 500;
     }
 </style>

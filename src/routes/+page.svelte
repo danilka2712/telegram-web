@@ -24,6 +24,7 @@
             color: "#0ea5e9",
         });
         goto("/contact");
+        tgApp.offEvent("mainButtonClicked", sendTelegramData);
     }
 
     function toggleMainButton(product) {

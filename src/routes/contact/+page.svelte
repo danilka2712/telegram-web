@@ -44,7 +44,7 @@
     <div class="mt-6 flex cart-items justify-between pr-6">
         <p class=" font-medium">Итого:</p>
         <p class=" font-medium">
-            {cartTotal}
+            {cartTotal}₽
         </p>
     </div>
 </div>

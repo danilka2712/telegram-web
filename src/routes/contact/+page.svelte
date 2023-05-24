@@ -20,7 +20,7 @@
 </script>
 
 <div class="container">
-    <div class="cart-items">
+    <div class="cart-items py-4">
         <h1 class="title">Корзина</h1>
         {#each $cart as item}
             <div class="cart-item">
@@ -41,7 +41,7 @@
             </div>
         {/each}
     </div>
-    <div class="mt-6 flex cart-items justify-between pr-6 py-6 pl-4">
+    <div class="mt-6 flex cart-items justify-between pr-6 py-4 pl-4">
         <p class=" font-medium">Итого:</p>
         <p class=" font-medium">
             {cartTotal}₽

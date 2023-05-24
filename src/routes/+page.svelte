@@ -81,7 +81,7 @@
     }
 </script>
 
-<div class="mt-4 grid-cols-3 grid gap-4">
+<div class="mt-4 grid-cols-3 grid gap-4 body">
     {#key $cart}
         {#each $products as product}
             {#if product.id}
@@ -131,9 +131,14 @@
         {/each}
     {/key}
 </div>
+<a href="/contact">asd</a>
 
 <style>
     .hint_color {
         color: var(--tg-theme-hint-color);
+    }
+    .body {
+        background: var(--tg-theme-bg-color);
+        color: var(--tg-theme-text-color);
     }
 </style>

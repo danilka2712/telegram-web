@@ -23,7 +23,7 @@
                 <div class="flex items-center">
                     <div class=" relative bg-white w-16 h-16">
                         <img
-                            class="item-image object-cover w-20 h-20"
+                            class="item-image absolute object-cover w-20 h-20"
                             src="cigarette_PNG4759.png"
                             alt=""
                         />

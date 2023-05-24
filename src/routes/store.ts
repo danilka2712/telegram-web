@@ -12,7 +12,7 @@ export const products = writable(
         },
         {
             id: 2,
-            name: "Bond blue",
+            name: "Прима Донна",
             price: "1300",
             quantity: 0,
             availability: 12,
@@ -20,7 +20,7 @@ export const products = writable(
         },
         {
             id: 3,
-            name: "Bond blue",
+            name: "Русский стиль син.",
             price: "1300",
             quantity: 0,
             availability: 12,
@@ -28,7 +28,7 @@ export const products = writable(
         },
         {
             id: 4,
-            name: "Bond blue",
+            name: "Mond premium coffee",
             price: "1300",
             quantity: 0,
             availability: 12,

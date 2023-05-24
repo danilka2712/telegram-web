@@ -8,7 +8,7 @@
     });
     function sendTelegramData() {
         const tgApp = window.Telegram.WebApp;
-        tgApp.MainButton.sendData($cart);
+        tgApp.sendData($cart);
     }
 </script>
 

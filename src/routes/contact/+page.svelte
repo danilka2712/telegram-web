@@ -13,10 +13,20 @@
 </script>
 
 <div class="body h-screen w-full">
-    <div class="box">
+    <div class="box px-2">
         {#each $cart as cart}
-            <h1>{cart.name}</h1>
-            <h1>{cart.quantity}</h1>
+            <div class="flex items-center justify-between">
+                <div class="flex items-center">
+                    <img class="w-20 h-20" src="cigarette_PNG4759.png" alt="" />
+                    <div>
+                        <p class=" font-semibold">{cart.name}</p>
+                        <p class=" text-sm hint_color">
+                            количество: {cart.quantity}
+                        </p>
+                    </div>
+                </div>
+                <div class=" font-medium">2300₽</div>
+            </div>
         {/each}
     </div>
 </div>
@@ -30,5 +40,8 @@
         background: var(--tg-theme-bg-color);
 
         color: var(--tg-theme-text-color);
+    }
+    .hint_color {
+        color: var(--tg-theme-hint-color);
     }
 </style>

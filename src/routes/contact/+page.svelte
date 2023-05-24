@@ -6,13 +6,17 @@
         const tgApp = window.Telegram.WebApp;
         tgApp.onEvent("mainButtonClicked", sendTelegramData);
     });
+    let hide = false;
     function sendTelegramData() {
         const tgApp = window.Telegram.WebApp;
         tgApp.sendData($cart);
+        hide = true;
     }
 </script>
 
-<button on:click={sendTelegramData}>asd</button>
+{#if hide}
+    <h1>dsadsad</h1>
+{/if}
 <div class="body h-screen w-full">
     <div class="box">
         {#each $cart as cart}

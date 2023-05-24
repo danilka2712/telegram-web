@@ -40,11 +40,14 @@
                 <div class="item-price pr-6">{item.price}</div>
             </div>
         {/each}
-        <div class="mt-6 flex justify-end pr-6">
-            <p class=" font-medium">
-                Итого: {cartTotal}
-            </p>
-        </div>
+    </div>
+    <div class="mt-6 flex cart-items justify-between pr-6">
+        <p class=" font-medium">
+            Итого: {cartTotal}
+        </p>
+        <p class=" font-medium">
+            {cartTotal}
+        </p>
     </div>
 </div>
 

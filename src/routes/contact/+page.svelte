@@ -21,9 +21,9 @@
         {#each $cart as item}
             <div class="cart-item">
                 <div class="flex items-center">
-                    <div class=" relative bg-white w-20 h-20">
+                    <div class="  bg-white w-20 h-20">
                         <img
-                            class="item-image absolute top-0 object-fill w-24 h-20"
+                            class="item-image object-fill w-32 h-32"
                             src="cigarette_PNG4759.png"
                             alt=""
                         />

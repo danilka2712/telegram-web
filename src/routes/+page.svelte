@@ -108,7 +108,7 @@
                             {#if product.quantity === 0}
                                 <button
                                     on:click={() => toggleMainButton(product)}
-                                    class="mt-3 bg-[#0ea5e9] uppercase font-semibold h-8 w-3/4 rounded-lg text-sm"
+                                    class="mt-3 bg-[#0ea5e9] uppercase font-semibold h-9 w-3/4 rounded-lg text-sm"
                                     >Купить</button
                                 >
                             {:else}
@@ -116,13 +116,13 @@
                                     <button
                                         on:click={() =>
                                             minusMainButton(product)}
-                                        class="mt-3 bg-[#0ea5e9] flex items-center justify-center h-8 w-2/6 rounded-lg text-sm"
+                                        class="mt-3 bg-[#e90e3d] flex items-center justify-center h-9 w-2/6 rounded-lg text-sm"
                                         ><Minus /></button
                                     >
                                     <button
                                         on:click={() =>
                                             toggleMainButton(product)}
-                                        class="mt-3 bg-[#0ea5e9] flex items-center justify-center h-8 w-2/6 rounded-lg text-sm"
+                                        class="mt-3 bg-[#0ea5e9] flex items-center justify-center h-9 w-2/6 rounded-lg text-sm"
                                         ><Plus /></button
                                     >
                                 </div>

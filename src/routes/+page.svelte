@@ -97,7 +97,13 @@
                                 {product.quantity}
                             </h1>
                         {/if}
-                        <img class="" src="/cigarette_PNG4759.png" alt="" />
+                        <div class="w-28 h-28">
+                            <img
+                                class=" object-cover w-full h-full"
+                                src="/cigarette_PNG4759.png"
+                                alt=""
+                            />
+                        </div>
                         <div
                             class=" flex items-center justify-center flex-col w-full"
                         >

@@ -8,16 +8,18 @@
         const tgApp = window.Telegram.WebApp;
         tgApp.sendData($cart);
     }
-
+    let cartTotal = 0;
     onMount(() => {
         const tgApp = window.Telegram.WebApp;
         tgApp.onEvent("mainButtonClicked", sendTelegramData);
+        cartTotal = $cart.reduce((item) => item.price * item.quantity, 0);
     });
 </script>
 
 <div class="container">
     <div class="cart-items">
         <h1 class="title">Корзина</h1>
+        {cartTotal}
         {#each $cart as item}
             <div class="cart-item">
                 <div class="flex items-center">

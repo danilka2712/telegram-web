@@ -21,11 +21,13 @@
         {#each $cart as item}
             <div class="cart-item">
                 <div class="flex items-center">
-                    <img
-                        class="item-image"
-                        src="cigarette_PNG4759.png"
-                        alt=""
-                    />
+                    <div class=" relative bg-white">
+                        <img
+                            class="item-image object-cover w-full h-full"
+                            src="cigarette_PNG4759.png"
+                            alt=""
+                        />
+                    </div>
                     <div class="item-details">
                         <p class="item-name">{item.name}</p>
                         <p class="item-quantity">количество: {item.quantity}</p>

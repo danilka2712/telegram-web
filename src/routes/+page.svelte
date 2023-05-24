@@ -19,6 +19,8 @@
     function sendTelegramData() {
         const tgApp = window.Telegram.WebApp;
         tgApp.BackButton.show();
+        tgApp.expand();
+
         tgApp.MainButton.setParams({
             text: `Купить`,
             color: "#0ea5e9",

@@ -13,9 +13,9 @@
 </script>
 
 <div class="body h-screen w-full">
-    <div class="box px-2">
+    <div class="box px-2 pr-4">
         {#each $cart as cart}
-            <div class="flex items-center justify-between">
+            <div class="flex items-center justify-between mb-2">
                 <div class="flex items-center">
                     <img class="w-20 h-20" src="cigarette_PNG4759.png" alt="" />
                     <div>
@@ -25,7 +25,7 @@
                         </p>
                     </div>
                 </div>
-                <div class=" font-medium">2300₽</div>
+                <div class=" font-medium text-sm">2300₽</div>
             </div>
         {/each}
     </div>

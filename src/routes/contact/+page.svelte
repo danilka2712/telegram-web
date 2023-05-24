@@ -1,25 +1,27 @@
 <!-- src/routes/contact/+page.svelte -->
 
 <script>
-    import { onMount } from "svelte";
+    import { onMount, tick } from "svelte";
     import { cart } from "../store";
 
     function sendTelegramData() {
         const tgApp = window.Telegram.WebApp;
         tgApp.sendData($cart);
     }
-    let cartTotal = 0;
+    let cartTotal = 1;
     onMount(() => {
         const tgApp = window.Telegram.WebApp;
         tgApp.onEvent("mainButtonClicked", sendTelegramData);
-        cartTotal = $cart.reduce((item) => item.price * item.quantity, 0);
+        cartTotal = $cart.reduce(
+            (total, item) => total + item.price * item.quantity,
+            0
+        );
     });
 </script>
 
 <div class="container">
     <div class="cart-items">
         <h1 class="title">Корзина</h1>
-        {cartTotal}
         {#each $cart as item}
             <div class="cart-item">
                 <div class="flex items-center">
@@ -38,6 +40,11 @@
                 <div class="item-price pr-6">900₽</div>
             </div>
         {/each}
+        <div class="mt-6 flex justify-end pr-6">
+            <p class=" font-medium">
+                Итого: {cartTotal}
+            </p>
+        </div>
     </div>
 </div>
 

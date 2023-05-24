@@ -84,6 +84,7 @@
     }
 </script>
 
+<a href="/contact">Перейти</a>
 <div class="mt-4 grid-cols-3 grid gap-4 body px-2">
     {#key $cart}
         {#each $products as product}

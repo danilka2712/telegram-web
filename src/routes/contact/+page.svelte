@@ -16,14 +16,20 @@
 </script>
 
 <div class="container">
-    <h1 class="title">Корзина</h1>
     <div class="cart-items">
+        <h1 class="title">Корзина</h1>
         {#each $cart as item}
             <div class="cart-item">
-                <img class="item-image" src="cigarette_PNG4759.png" alt="" />
-                <div class="item-details">
-                    <p class="item-name">{item.name}</p>
-                    <p class="item-quantity">количество: {item.quantity}</p>
+                <div class="flex items-center">
+                    <img
+                        class="item-image"
+                        src="cigarette_PNG4759.png"
+                        alt=""
+                    />
+                    <div class="item-details">
+                        <p class="item-name">{item.name}</p>
+                        <p class="item-quantity">количество: {item.quantity}</p>
+                    </div>
                 </div>
                 <div class="item-price">900₽</div>
             </div>

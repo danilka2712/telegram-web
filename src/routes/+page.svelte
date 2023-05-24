@@ -81,7 +81,7 @@
     }
 </script>
 
-<div class="mt-4 grid-cols-3 grid gap-4 body">
+<div class="mt-4 grid-cols-3 grid gap-4 body px-2">
     {#key $cart}
         {#each $products as product}
             {#if product.id}

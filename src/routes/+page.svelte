@@ -22,7 +22,7 @@
         tgApp.expand();
 
         tgApp.MainButton.setParams({
-            text: `Купить`,
+            text: `Оформить`,
             color: "#0ea5e9",
         });
         goto("/contact");

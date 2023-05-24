@@ -48,7 +48,7 @@
     }
 
     .title {
-        font-size: 1.5rem;
+        font-size: 1.2rem;
         font-weight: 600;
         margin-bottom: 1rem;
         padding-left: 1rem;
@@ -70,7 +70,6 @@
 
     .item-image {
         height: 5rem;
-        margin-right: 1rem;
         width: 5rem;
     }
 

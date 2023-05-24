@@ -1,8 +1,8 @@
 <svg
     xmlns="http://www.w3.org/2000/svg"
-    width="15"
+    width="13"
     height="2"
-    viewBox="0 0 15 2"
+    viewBox="0 0 13 2"
     fill="none"
 >
     <path

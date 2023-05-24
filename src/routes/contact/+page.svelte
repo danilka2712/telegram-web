@@ -70,7 +70,6 @@
     .cart-items {
         background: var(--tg-theme-bg-color);
         color: var(--tg-theme-text-color);
-        padding: 1rem;
     }
 
     .cart-item {

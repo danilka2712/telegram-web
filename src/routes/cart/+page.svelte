@@ -7,10 +7,12 @@
     function sendTelegramData() {
         const tgApp = window.Telegram.WebApp;
         const address = "Лукашевича 25";
-        const dataToSend = {
-            address: address,
-            cart: $cart,
-        };
+        const dataToSend = [
+            {
+                address: address,
+                cart: $cart,
+            },
+        ];
 
         tgApp.sendData(dataToSend);
     }

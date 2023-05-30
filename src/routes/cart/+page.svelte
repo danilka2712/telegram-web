@@ -7,7 +7,7 @@
     function sendTelegramData() {
         const tgApp = window.Telegram.WebApp;
         const address = "Лукашевича 25";
-        tgApp.sendData($cart, address);
+        tgApp.sendData(`${address} + ${$cart}`);
     }
     let cartTotal = 1;
     onMount(() => {

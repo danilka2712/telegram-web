@@ -25,7 +25,7 @@
             text: `Оформить`,
             color: "#0ea5e9",
         });
-        goto("/contact");
+        goto("/cart");
         tgApp.offEvent("mainButtonClicked", sendTelegramData);
     }
 

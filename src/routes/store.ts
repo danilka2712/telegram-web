@@ -23,7 +23,7 @@ export const products = writable(
         },
         {
             id: 3,
-            name: "Camel Black Prem.",
+            name: "Camel Black P.",
             price: "1300",
             quantity: 0,
             availability: 12,

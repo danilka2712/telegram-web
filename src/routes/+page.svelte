@@ -100,7 +100,7 @@
                         <div class="w-28 h-28">
                             <img
                                 class=" object-cover w-full h-full"
-                                src="/cigarette_PNG4759.png"
+                                src={product.image}
                                 alt=""
                             />
                         </div>

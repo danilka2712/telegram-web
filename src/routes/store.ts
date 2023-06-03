@@ -7,6 +7,7 @@ export const products = writable(
             name: "Bond black",
             price: "1200",
             quantity: 0,
+            image: "/MarlbotoRed.png",
             availability: 10,
             hidden: false,
         },
@@ -15,15 +16,19 @@ export const products = writable(
             name: "Прима Донна",
             price: "1300",
             quantity: 0,
+            image: "/WinstonXsBlue.png",
+
             availability: 12,
             hidden: false,
         },
         {
             id: 3,
-            name: "Русский стиль",
+            name: "Camel Black Prem.",
             price: "1300",
             quantity: 0,
             availability: 12,
+            image: "/CamelPremiumBlack.png",
+
             hidden: false,
         },
         {
@@ -31,6 +36,8 @@ export const products = writable(
             name: "Mond premium",
             price: "1300",
             quantity: 0,
+            image: "/MarlbotoRed.png",
+
             availability: 12,
             hidden: false,
         },
@@ -39,6 +46,8 @@ export const products = writable(
             name: "Bond blue",
             price: "1300",
             quantity: 0,
+            image: "/Parlament.png",
+
             availability: 12,
             hidden: false,
         },

@@ -36,7 +36,7 @@
                     <div class=" w-24 h-24">
                         <img
                             class="item-image object-cover w-full h-full"
-                            src="cigarette_PNG4759.png"
+                            src={item.image}
                             alt=""
                         />
                     </div>

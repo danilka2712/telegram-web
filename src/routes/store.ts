@@ -51,7 +51,7 @@ export const products = writable(
         },
         {
             id: 6,
-            name: "Bond premium com.",
+            name: "Bond Compact Pr.",
             price: "1300",
             quantity: 0,
             image: "/BondCompactPremium.png",

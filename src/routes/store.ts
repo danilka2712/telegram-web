@@ -4,7 +4,7 @@ export const products = writable(
     [
         {
             id: 1,
-            name: "Marlboro red Nano",
+            name: "Marlboro 🔴 Nano",
             price: "1200",
             quantity: 0,
             image: "/MarlbotoRed.png",
@@ -13,7 +13,7 @@ export const products = writable(
         },
         {
             id: 2,
-            name: "Winston Xs Blue",
+            name: "Winston Xs 🔵",
             price: "1300",
             quantity: 0,
             image: "/WinstonXsBlue.png",
@@ -23,7 +23,7 @@ export const products = writable(
         },
         {
             id: 3,
-            name: "Camel Black P.",
+            name: "Camel ⚫ Prem.",
             price: "1300",
             quantity: 0,
             availability: 12,

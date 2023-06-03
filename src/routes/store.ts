@@ -33,10 +33,10 @@ export const products = writable(
         },
         {
             id: 4,
-            name: "Mond premium",
+            name: "Parlament Nano Res.",
             price: "1300",
             quantity: 0,
-            image: "/MarlbotoRed.png",
+            image: "/ParlamentNanoRes.png",
 
             availability: 12,
             hidden: false,

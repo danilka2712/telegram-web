@@ -13,7 +13,7 @@ export const products = writable(
         },
         {
             id: 2,
-            name: "Прима Донна",
+            name: "Winston Xs Blue",
             price: "1300",
             quantity: 0,
             image: "/WinstonXsBlue.png",

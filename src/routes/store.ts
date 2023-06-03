@@ -33,7 +33,7 @@ export const products = writable(
         },
         {
             id: 4,
-            name: "Parlament Nano Res.",
+            name: "Parlament Nano",
             price: "1300",
             quantity: 0,
             image: "/ParlamentNanoRes.png",

@@ -77,7 +77,7 @@ export const products = writable(
             hidden: false,
         },
         {
-            id: 8,
+            id: 9,
             name: "Parliament aqua",
             price: "1300",
             quantity: 0,
@@ -86,7 +86,7 @@ export const products = writable(
             hidden: false,
         },
         {
-            id: 9,
+            id: 10,
             name: "🔵Parker&Simpson",
             price: "1300",
             quantity: 0,
@@ -95,7 +95,7 @@ export const products = writable(
             hidden: false,
         },
         {
-            id: 10,
+            id: 11,
             name: "🔵Sobranie",
             price: "1300",
             quantity: 0,
@@ -104,7 +104,7 @@ export const products = writable(
             hidden: false,
         },
         {
-            id: 11,
+            id: 12,
             name: "Kent crystal",
             price: "1300",
             quantity: 0,
@@ -113,7 +113,7 @@ export const products = writable(
             hidden: false,
         },
         {
-            id: 12,
+            id: 13,
             name: "Kent Nano Silver",
             price: "1300",
             quantity: 0,
@@ -122,7 +122,7 @@ export const products = writable(
             hidden: false,
         },
         {
-            id: 13,
+            id: 14,
             name: "Kent 8",
             price: "1300",
             quantity: 0,
@@ -131,7 +131,7 @@ export const products = writable(
             hidden: false,
         },
         {
-            id: 14,
+            id: 15,
             name: "Kent 4",
             price: "1300",
             quantity: 0,
@@ -140,7 +140,7 @@ export const products = writable(
             hidden: false,
         },
         {
-            id: 15,
+            id: 16,
             name: "LM синий",
             price: "1300",
             quantity: 0,
@@ -149,7 +149,7 @@ export const products = writable(
             hidden: false,
         },
         {
-            id: 16,
+            id: 17,
             name: "LM красный",
             price: "1300",
             quantity: 0,
@@ -158,7 +158,7 @@ export const products = writable(
             hidden: false,
         },
         {
-            id: 17,
+            id: 18,
             name: "🔵Петр Эталон",
             price: "1300",
             quantity: 0,
@@ -167,7 +167,7 @@ export const products = writable(
             hidden: false,
         },
         {
-            id: 18,
+            id: 19,
             name: "LD синий",
             price: "1300",
             quantity: 0,
@@ -176,7 +176,7 @@ export const products = writable(
             hidden: false,
         },
         {
-            id: 19,
+            id: 20,
             name: "LD красный",
             price: "1300",
             quantity: 0,

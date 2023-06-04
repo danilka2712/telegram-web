@@ -122,13 +122,13 @@
                                     <button
                                         on:click={() =>
                                             minusMainButton(product)}
-                                        class="mt-3 bg-[#f34d4d] flex items-center justify-center h-9 w-2/6 rounded-lg text-sm"
+                                        class="mt-3 bg-[#ee4943] flex items-center justify-center h-9 w-2/6 rounded-lg text-sm"
                                         ><Minus /></button
                                     >
                                     <button
                                         on:click={() =>
                                             toggleMainButton(product)}
-                                        class="mt-3 bg-[#0ea5e9] flex items-center justify-center h-9 w-2/6 rounded-lg text-sm"
+                                        class="mt-3 bg-[#18a1f8] flex items-center justify-center h-9 w-2/6 rounded-lg text-sm"
                                         ><Plus /></button
                                     >
                                 </div>

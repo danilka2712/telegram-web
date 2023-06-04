@@ -92,7 +92,7 @@
                     <div class="flex flex-col relative items-center">
                         {#if product.quantity !== 0}
                             <h1
-                                class=" absolute top-0 right-3 bg-blue-500 w-6 flex justify-center items-center rounded-full"
+                                class=" absolute top-0 right-3 bg-[#f8a918] w-6 flex justify-center items-center rounded-full"
                             >
                                 {product.quantity}
                             </h1>
@@ -114,7 +114,7 @@
                             {#if product.quantity === 0}
                                 <button
                                     on:click={() => toggleMainButton(product)}
-                                    class="mt-3 bg-[#0ea5e9] uppercase font-semibold h-9 w-3/4 rounded-lg text-sm"
+                                    class="mt-3 bg-[#f8a918] uppercase font-semibold h-9 w-3/4 rounded-lg text-sm"
                                     >Купить</button
                                 >
                             {:else}

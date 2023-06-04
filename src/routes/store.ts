@@ -42,7 +42,7 @@ export const products = writable(
         },
         {
             id: 5,
-            name: "Camel comp.",
+            name: "Camel compact",
             price: "1300",
             quantity: 0,
             image: "/CamelCompact.png",

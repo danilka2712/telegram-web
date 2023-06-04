@@ -71,7 +71,7 @@
             const tgApp = window.Telegram.WebApp;
             tgApp.MainButton.setParams({
                 text: `В корзине (${getTotalQuantity()})`,
-                color: "#0ea5e9",
+                color: "#18aaf8",
             });
         } else {
             const tgApp = window.Telegram.WebApp;
@@ -92,7 +92,7 @@
                     <div class="flex flex-col relative items-center">
                         {#if product.quantity !== 0}
                             <h1
-                                class=" absolute top-0 right-3 bg-[#f8a918] w-6 flex justify-center items-center rounded-full"
+                                class=" absolute top-0 right-3 bg-[#18aaf8] w-6 flex justify-center items-center rounded-full"
                             >
                                 {product.quantity}
                             </h1>
@@ -114,7 +114,7 @@
                             {#if product.quantity === 0}
                                 <button
                                     on:click={() => toggleMainButton(product)}
-                                    class="mt-3 bg-[#f8a918] uppercase font-semibold h-9 w-3/4 rounded-lg text-sm"
+                                    class="mt-3 bg-[#18aaf8] uppercase font-semibold h-9 w-3/4 rounded-lg text-sm"
                                     >Купить</button
                                 >
                             {:else}
@@ -128,7 +128,7 @@
                                     <button
                                         on:click={() =>
                                             toggleMainButton(product)}
-                                        class="mt-3 bg-[#fa9d11] flex items-center justify-center h-9 w-2/6 rounded-lg text-sm"
+                                        class="mt-3 bg-[#18aaf8] flex items-center justify-center h-9 w-2/6 rounded-lg text-sm"
                                         ><Plus /></button
                                     >
                                 </div>

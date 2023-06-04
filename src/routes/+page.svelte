@@ -47,7 +47,7 @@
             tgApp.MainButton.show();
             tgApp.MainButton.setParams({
                 text: `В корзине (${getTotalQuantity()})`,
-                color: "#31b545",
+                color: "#18aaf8",
             });
         }
     }

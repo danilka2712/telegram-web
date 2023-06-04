@@ -122,7 +122,7 @@
                                     <button
                                         on:click={() =>
                                             minusMainButton(product)}
-                                        class="mt-3 bg-[#e90e3d] flex items-center justify-center h-9 w-2/6 rounded-lg text-sm"
+                                        class="mt-3 bg-[#e90e3d]/75 flex items-center justify-center h-9 w-2/6 rounded-lg text-sm"
                                         ><Minus /></button
                                     >
                                     <button

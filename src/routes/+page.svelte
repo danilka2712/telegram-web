@@ -47,7 +47,7 @@
             tgApp.MainButton.show();
             tgApp.MainButton.setParams({
                 text: `В корзине (${getTotalQuantity()})`,
-                color: "#0ea5e9",
+                color: "#31b545",
             });
         }
     }
@@ -128,7 +128,7 @@
                                     <button
                                         on:click={() =>
                                             toggleMainButton(product)}
-                                        class="mt-3 bg-[#18a1f8] flex items-center justify-center h-9 w-2/6 rounded-lg text-sm"
+                                        class="mt-3 bg-[#fa9d11] flex items-center justify-center h-9 w-2/6 rounded-lg text-sm"
                                         ><Plus /></button
                                     >
                                 </div>

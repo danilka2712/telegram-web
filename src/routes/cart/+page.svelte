@@ -45,7 +45,7 @@
                         <p class="item-quantity">количество: {item.quantity}</p>
                     </div>
                 </div>
-                <div class="item-price pr-6">{item.price}</div>
+                <div class="item-price pr-6">{item.price * item.quantity}</div>
             </div>
         {/each}
     </div>

@@ -109,7 +109,7 @@
                         >
                             <h1 class=" font-medium text-sm">{product.name}</h1>
                             <div class="flex hint_color">
-                                <p class="">1200₽</p>
+                                <p class="">{product.price}</p>
                             </div>
                             {#if product.quantity === 0}
                                 <button
